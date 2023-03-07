@@ -1,0 +1,27 @@
+--Create a grocery store database
+
+CREATE TABLE Store_Products (id INTEGER PRIMARY KEY, name TEXT, price INTEGER, quantity INTEGER);
+
+INSERT INTO Store_Products VALUES(1, "Notebook", 1.00, 100); 
+INSERT INTO Store_Products VALUES(2, "Pencils", 0.50, 250);
+INSERT INTO Store_Products Values(3, "Pens", 0.75, 250);
+INSERT INTO Store_Products Values(4, "Binder", 2.00, 70);
+INSERT INTO Store_Products Values(5, "Copy Paper",2.75, 350);
+INSERT INTO Store_Products Values(6, "Dish Soap", 1.25, 65);
+INSERT INTO Store_Products Values(7, "Glass Cups", 2.50, 80);
+INSERT INTO Store_Products Values(8, "Fan", 10.00, 20);
+INSERT INTO Store_Products Values(9, "Pot Set", 15.75, 12);
+INSERT INTO Store_Products Values(10, "Electrical Outlet", 6.50, 13);
+INSERT INTO Store_Products Values(11, "Toolbox", 17.99, 7);
+INSERT INTO Store_Products VALUES(12, "Picture Frames", 3.99, 45);
+INSERT INTO Store_Products VALUES(13, "Mirror", 7.75, 12);
+INSERT INTO Store_Products VALUES(14, "Cutlery Set", 9.00, 7);
+INSERT INTO Store_Products VALUES(15, "Book Bags", 12.99, 35);
+SELECT * FROM Store_Products;
+
+--display the database ordered by price
+SELECT * FROM Store_Products 
+ORDER BY Price;
+
+--what products cost more than 1.00?
+SELECT * FROM Store_Products WHERE price >=1.00 ORDER BY Price
